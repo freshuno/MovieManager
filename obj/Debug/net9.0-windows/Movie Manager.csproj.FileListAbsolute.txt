@@ -15,3 +15,21 @@ E:\C#projects\Movie Manager\obj\Debug\net9.0-windows\Movie Manager.pdb
 E:\C#projects\Movie Manager\obj\Debug\net9.0-windows\Movie Manager.genruntimeconfig.cache
 E:\C#projects\Movie Manager\obj\Debug\net9.0-windows\ref\Movie Manager.dll
 E:\C#projects\Movie Manager\obj\Debug\net9.0-windows\Movie_Manager.Forms.MovieControl.resources
+E:\C#projects\MovieManager\bin\Debug\net9.0-windows\Movie Manager.exe
+E:\C#projects\MovieManager\bin\Debug\net9.0-windows\Movie Manager.deps.json
+E:\C#projects\MovieManager\bin\Debug\net9.0-windows\Movie Manager.runtimeconfig.json
+E:\C#projects\MovieManager\bin\Debug\net9.0-windows\Movie Manager.dll
+E:\C#projects\MovieManager\bin\Debug\net9.0-windows\Movie Manager.pdb
+E:\C#projects\MovieManager\obj\Debug\net9.0-windows\Movie_Manager.Forms.MainMenu.resources
+E:\C#projects\MovieManager\obj\Debug\net9.0-windows\Movie_Manager.Forms.MovieControl.resources
+E:\C#projects\MovieManager\obj\Debug\net9.0-windows\Movie Manager.csproj.GenerateResource.cache
+E:\C#projects\MovieManager\obj\Debug\net9.0-windows\Movie Manager.GeneratedMSBuildEditorConfig.editorconfig
+E:\C#projects\MovieManager\obj\Debug\net9.0-windows\Movie Manager.AssemblyInfoInputs.cache
+E:\C#projects\MovieManager\obj\Debug\net9.0-windows\Movie Manager.AssemblyInfo.cs
+E:\C#projects\MovieManager\obj\Debug\net9.0-windows\Movie Manager.csproj.CoreCompileInputs.cache
+E:\C#projects\MovieManager\obj\Debug\net9.0-windows\Movie Manager.sourcelink.json
+E:\C#projects\MovieManager\obj\Debug\net9.0-windows\Movie Manager.dll
+E:\C#projects\MovieManager\obj\Debug\net9.0-windows\refint\Movie Manager.dll
+E:\C#projects\MovieManager\obj\Debug\net9.0-windows\Movie Manager.pdb
+E:\C#projects\MovieManager\obj\Debug\net9.0-windows\Movie Manager.genruntimeconfig.cache
+E:\C#projects\MovieManager\obj\Debug\net9.0-windows\ref\Movie Manager.dll

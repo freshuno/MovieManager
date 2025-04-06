@@ -30,6 +30,7 @@
         {
             label1 = new Label();
             checkBox1 = new CheckBox();
+            RemoveMovieButton = new Button();
             SuspendLayout();
             // 
             // label1
@@ -52,11 +53,22 @@
             checkBox1.UseVisualStyleBackColor = true;
             checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
+            // RemoveMovieButton
+            // 
+            RemoveMovieButton.Location = new Point(266, 173);
+            RemoveMovieButton.Name = "RemoveMovieButton";
+            RemoveMovieButton.Size = new Size(104, 40);
+            RemoveMovieButton.TabIndex = 2;
+            RemoveMovieButton.Text = "Remove from collection";
+            RemoveMovieButton.UseVisualStyleBackColor = true;
+            RemoveMovieButton.Click += RemoveMovieButton_Click;
+            // 
             // MovieControl
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(419, 241);
+            Controls.Add(RemoveMovieButton);
             Controls.Add(checkBox1);
             Controls.Add(label1);
             Name = "MovieControl";
@@ -69,5 +81,6 @@
 
         private Label label1;
         private CheckBox checkBox1;
+        private Button RemoveMovieButton;
     }
 }

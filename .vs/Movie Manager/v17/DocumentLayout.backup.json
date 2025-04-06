@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "E:\\C#projects\\MovieManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|e:\\c#projects\\moviemanager\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|E:\\C#projects\\MovieManager\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|solutionrelative:forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|e:\\c#projects\\moviemanager\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|solutionrelative:forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|E:\\C#projects\\MovieManager\\forms\\moviecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|solutionrelative:forms\\moviecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|e:\\c#projects\\moviemanager\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|solutionrelative:forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|e:\\c#projects\\moviemanager\\forms\\moviecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,15 +46,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -68,31 +64,32 @@
               "RelativeDocumentMoniker": "Forms\\MovieControl.cs",
               "ToolTip": "E:\\C#projects\\MovieManager\\Forms\\MovieControl.cs",
               "RelativeToolTip": "Forms\\MovieControl.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBsAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-06T16:11:08.381Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MovieControl.cs [Design]",
               "DocumentMoniker": "E:\\C#projects\\MovieManager\\Forms\\MovieControl.cs",
               "RelativeDocumentMoniker": "Forms\\MovieControl.cs",
-              "ToolTip": "E:\\C#projects\\Movie Manager\\Forms\\MovieControl.cs [Design]",
-              "RelativeToolTip": "..\\Movie Manager\\Forms\\MovieControl.cs [Design]",
+              "ToolTip": "E:\\C#projects\\MovieManager\\Forms\\MovieControl.cs [Design]",
+              "RelativeToolTip": "Forms\\MovieControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T16:11:01.422Z"
+              "WhenOpened": "2025-04-06T16:11:01.422Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "E:\\C#projects\\MovieManager\\Forms\\MainMenu.cs",
               "RelativeDocumentMoniker": "Forms\\MainMenu.cs",
               "ToolTip": "E:\\C#projects\\MovieManager\\Forms\\MainMenu.cs",
               "RelativeToolTip": "Forms\\MainMenu.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowGYAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAuwGgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-06T13:57:33.891Z",
               "EditorCaption": ""
@@ -129,9 +126,10 @@
               "RelativeDocumentMoniker": "Classes\\Movie.cs",
               "ToolTip": "E:\\C#projects\\MovieManager\\Classes\\Movie.cs",
               "RelativeToolTip": "Classes\\Movie.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAA7wCMAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAiwCMAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T13:58:32.694Z"
+              "WhenOpened": "2025-04-06T13:58:32.694Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

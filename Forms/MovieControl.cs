@@ -14,10 +14,12 @@ namespace Movie_Manager.Forms
     public partial class MovieControl : Form
     {
         Movie selectedMovie;
-        public MovieControl(Movie Movie)
+        List<Movie> movies;
+        public MovieControl(Movie Movie, int Index, List<Movie> Movies)
         {
             InitializeComponent();
             selectedMovie = Movie;
+            movies = Movies;
             label1.Text = Movie.Title;
             if (Movie.Watched)
             {
@@ -39,6 +41,12 @@ namespace Movie_Manager.Forms
                 selectedMovie.Watched = false;
             }
 
+        }
+
+        private void RemoveMovieButton_Click(object sender, EventArgs e)
+        {
+            movies.Remove(selectedMovie);
+            Close();
         }
     }
 }

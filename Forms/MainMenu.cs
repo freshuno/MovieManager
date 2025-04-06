@@ -14,9 +14,10 @@ namespace Movie_Manager.Forms
 {
     public partial class MainMenu : Form
     {
-        
+        readonly string apiKey;
         public List<Movie> myMovies = [];
         Movie currentMovie;
+        int currentIndex;
         public MainMenu()
         {
             InitializeComponent();
@@ -26,6 +27,11 @@ namespace Movie_Manager.Forms
 
         private void SearchButton_click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(MovieTitleSearchBox.Text))
+            {
+                MessageBox.Show("Please enter a movie title");
+                return;
+            }
             string searchedTitle = MovieTitleSearchBox.Text;
             string url = $"https://www.omdbapi.com/?apikey={apiKey}&&t={searchedTitle}";
             using (HttpClient client = new HttpClient())
@@ -73,8 +79,22 @@ namespace Movie_Manager.Forms
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MovieControl movieControl = new MovieControl(myMovies[CollectionMoviesList.SelectedIndex]);
-            movieControl.ShowDialog();
+            currentIndex = CollectionMoviesList.SelectedIndex;
+
+        }
+        private void ManageMovieButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                MovieControl movieControl = new MovieControl(myMovies[CollectionMoviesList.SelectedIndex], CollectionMoviesList.SelectedIndex, myMovies);
+                movieControl.ShowDialog();
+                MovieListRefresh();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Choose a movie from the list");
+                return;
+            }
         }
 
         private void SaveToFileButton_click(object sender, EventArgs e)
@@ -82,7 +102,7 @@ namespace Movie_Manager.Forms
             string filePath = "data.json";
             string jsonString = JsonSerializer.Serialize(myMovies, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(filePath, jsonString);
-
+            MessageBox.Show("Data saved to file");
         }
 
         private void LoadFromFileButton_click(object sender, EventArgs e)
@@ -91,6 +111,7 @@ namespace Movie_Manager.Forms
             string jsonString = File.ReadAllText(filePath);
             myMovies = JsonSerializer.Deserialize<List<Movie>>(jsonString);
             MovieListRefresh();
+            MessageBox.Show("Data loaded from file");
         }
         private void MovieListRefresh()
         {
