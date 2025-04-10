@@ -8,7 +8,7 @@ namespace Movie_Manager
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new MainMenu());
+            Application.Run(new Login());
         }
     }
 }

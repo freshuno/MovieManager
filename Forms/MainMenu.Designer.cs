@@ -32,6 +32,8 @@
             MovieTitleSearchBox = new TextBox();
             SearchButton = new Button();
             SearchPanel = new Panel();
+            MoviePoster = new PictureBox();
+            PlotLabel = new Label();
             AddToCollectionButton = new Button();
             DirectorLabel = new Label();
             GenreLabel = new Label();
@@ -39,46 +41,55 @@
             ReleaseYearLabel = new Label();
             SearchPanelButton = new Button();
             CollectionPanelButton = new Button();
-            button4 = new Button();
             CollectionPanel = new Panel();
+            NameSearchButton = new Button();
+            NameSearchBox = new TextBox();
+            ShowDetailsButton = new Button();
+            PageLabel = new Label();
+            NextPageButton = new Button();
+            PreviousPageButton = new Button();
+            UnwatchedOnlyCheckBox = new CheckBox();
+            SortOptions = new ComboBox();
             ManageMovieButton = new Button();
-            LoadFromFileButton = new Button();
-            SaveToFileButton = new Button();
             CollectionMoviesList = new ListBox();
             YourCollectionLabel = new Label();
             SearchPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)MoviePoster).BeginInit();
             CollectionPanel.SuspendLayout();
             SuspendLayout();
             // 
             // MovieTitle
             // 
-            MovieTitle.Location = new Point(147, 134);
+            MovieTitle.Location = new Point(195, 70);
             MovieTitle.Name = "MovieTitle";
-            MovieTitle.Size = new Size(289, 15);
+            MovieTitle.Size = new Size(228, 84);
             MovieTitle.TabIndex = 0;
             MovieTitle.Text = "Welcome to Movie Manager";
             MovieTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // MovieTitleSearchBox
             // 
-            MovieTitleSearchBox.Location = new Point(239, 179);
+            MovieTitleSearchBox.Location = new Point(191, 162);
             MovieTitleSearchBox.Name = "MovieTitleSearchBox";
             MovieTitleSearchBox.PlaceholderText = "Movie title";
-            MovieTitleSearchBox.Size = new Size(100, 23);
+            MovieTitleSearchBox.Size = new Size(232, 23);
             MovieTitleSearchBox.TabIndex = 1;
             // 
             // SearchButton
             // 
-            SearchButton.Location = new Point(250, 216);
+            SearchButton.Location = new Point(262, 191);
             SearchButton.Name = "SearchButton";
             SearchButton.Size = new Size(75, 23);
             SearchButton.TabIndex = 2;
+            SearchButton.Tag = false;
             SearchButton.Text = "Search";
             SearchButton.UseVisualStyleBackColor = true;
             SearchButton.Click += SearchButton_click;
             // 
             // SearchPanel
             // 
+            SearchPanel.Controls.Add(MoviePoster);
+            SearchPanel.Controls.Add(PlotLabel);
             SearchPanel.Controls.Add(AddToCollectionButton);
             SearchPanel.Controls.Add(DirectorLabel);
             SearchPanel.Controls.Add(GenreLabel);
@@ -92,51 +103,68 @@
             SearchPanel.Size = new Size(661, 426);
             SearchPanel.TabIndex = 3;
             // 
+            // MoviePoster
+            // 
+            MoviePoster.Location = new Point(-1, 26);
+            MoviePoster.Name = "MoviePoster";
+            MoviePoster.Size = new Size(186, 273);
+            MoviePoster.SizeMode = PictureBoxSizeMode.StretchImage;
+            MoviePoster.TabIndex = 11;
+            MoviePoster.TabStop = false;
+            // 
+            // PlotLabel
+            // 
+            PlotLabel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            PlotLabel.Location = new Point(429, 13);
+            PlotLabel.Name = "PlotLabel";
+            PlotLabel.Padding = new Padding(20);
+            PlotLabel.RightToLeft = RightToLeft.No;
+            PlotLabel.Size = new Size(211, 399);
+            PlotLabel.TabIndex = 10;
+            PlotLabel.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // AddToCollectionButton
             // 
-            AddToCollectionButton.Location = new Point(442, 280);
+            AddToCollectionButton.Location = new Point(241, 389);
             AddToCollectionButton.Name = "AddToCollectionButton";
             AddToCollectionButton.Size = new Size(122, 23);
             AddToCollectionButton.TabIndex = 9;
             AddToCollectionButton.Text = "Add to collection";
             AddToCollectionButton.UseVisualStyleBackColor = true;
+            AddToCollectionButton.Visible = false;
             AddToCollectionButton.Click += AddToCollectionButton_click;
             // 
             // DirectorLabel
             // 
             DirectorLabel.AutoSize = true;
-            DirectorLabel.Location = new Point(478, 242);
+            DirectorLabel.Location = new Point(20, 359);
             DirectorLabel.Name = "DirectorLabel";
-            DirectorLabel.Size = new Size(49, 15);
+            DirectorLabel.Size = new Size(0, 15);
             DirectorLabel.TabIndex = 8;
-            DirectorLabel.Text = "Director";
             // 
             // GenreLabel
             // 
             GenreLabel.AutoSize = true;
-            GenreLabel.Location = new Point(478, 216);
+            GenreLabel.Location = new Point(20, 331);
             GenreLabel.Name = "GenreLabel";
-            GenreLabel.Size = new Size(38, 15);
+            GenreLabel.Size = new Size(0, 15);
             GenreLabel.TabIndex = 7;
-            GenreLabel.Text = "Genre";
             // 
             // RunTimeLabel
             // 
             RunTimeLabel.AutoSize = true;
-            RunTimeLabel.Location = new Point(478, 187);
+            RunTimeLabel.Location = new Point(20, 302);
             RunTimeLabel.Name = "RunTimeLabel";
-            RunTimeLabel.Size = new Size(54, 15);
+            RunTimeLabel.Size = new Size(0, 15);
             RunTimeLabel.TabIndex = 6;
-            RunTimeLabel.Text = "RunTime";
             // 
             // ReleaseYearLabel
             // 
             ReleaseYearLabel.AutoSize = true;
-            ReleaseYearLabel.Location = new Point(478, 162);
+            ReleaseYearLabel.Location = new Point(20, 271);
             ReleaseYearLabel.Name = "ReleaseYearLabel";
-            ReleaseYearLabel.Size = new Size(71, 15);
-            ReleaseYearLabel.TabIndex = 3;
-            ReleaseYearLabel.Text = "Release Year";
+            ReleaseYearLabel.Size = new Size(0, 15);
+            ReleaseYearLabel.TabIndex = 7;
             // 
             // SearchPanelButton
             // 
@@ -158,20 +186,17 @@
             CollectionPanelButton.UseVisualStyleBackColor = true;
             CollectionPanelButton.Click += CollectionPanelButton_click;
             // 
-            // button4
-            // 
-            button4.Location = new Point(12, 220);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 6;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
-            // 
             // CollectionPanel
             // 
+            CollectionPanel.Controls.Add(NameSearchButton);
+            CollectionPanel.Controls.Add(NameSearchBox);
+            CollectionPanel.Controls.Add(ShowDetailsButton);
+            CollectionPanel.Controls.Add(PageLabel);
+            CollectionPanel.Controls.Add(NextPageButton);
+            CollectionPanel.Controls.Add(PreviousPageButton);
+            CollectionPanel.Controls.Add(UnwatchedOnlyCheckBox);
+            CollectionPanel.Controls.Add(SortOptions);
             CollectionPanel.Controls.Add(ManageMovieButton);
-            CollectionPanel.Controls.Add(LoadFromFileButton);
-            CollectionPanel.Controls.Add(SaveToFileButton);
             CollectionPanel.Controls.Add(CollectionMoviesList);
             CollectionPanel.Controls.Add(YourCollectionLabel);
             CollectionPanel.Location = new Point(109, 12);
@@ -179,35 +204,94 @@
             CollectionPanel.Size = new Size(661, 426);
             CollectionPanel.TabIndex = 3;
             // 
+            // NameSearchButton
+            // 
+            NameSearchButton.Location = new Point(496, 55);
+            NameSearchButton.Name = "NameSearchButton";
+            NameSearchButton.Size = new Size(75, 23);
+            NameSearchButton.TabIndex = 20;
+            NameSearchButton.Text = "Search";
+            NameSearchButton.UseVisualStyleBackColor = true;
+            NameSearchButton.Click += NameSearchButton_Click;
+            // 
+            // NameSearchBox
+            // 
+            NameSearchBox.Location = new Point(450, 26);
+            NameSearchBox.Name = "NameSearchBox";
+            NameSearchBox.PlaceholderText = "Movie Title";
+            NameSearchBox.Size = new Size(166, 23);
+            NameSearchBox.TabIndex = 19;
+            // 
+            // ShowDetailsButton
+            // 
+            ShowDetailsButton.Location = new Point(268, 389);
+            ShowDetailsButton.Name = "ShowDetailsButton";
+            ShowDetailsButton.Size = new Size(122, 23);
+            ShowDetailsButton.TabIndex = 18;
+            ShowDetailsButton.Text = "Details";
+            ShowDetailsButton.UseVisualStyleBackColor = true;
+            ShowDetailsButton.Click += ShowDetailsButton_Click;
+            // 
+            // PageLabel
+            // 
+            PageLabel.AutoSize = true;
+            PageLabel.Location = new Point(578, 331);
+            PageLabel.Name = "PageLabel";
+            PageLabel.Size = new Size(38, 15);
+            PageLabel.TabIndex = 17;
+            PageLabel.Text = "label1";
+            // 
+            // NextPageButton
+            // 
+            NextPageButton.Location = new Point(138, 323);
+            NextPageButton.Name = "NextPageButton";
+            NextPageButton.Size = new Size(75, 23);
+            NextPageButton.TabIndex = 16;
+            NextPageButton.Text = "Next";
+            NextPageButton.UseVisualStyleBackColor = true;
+            NextPageButton.Click += NextPageButton_Click;
+            // 
+            // PreviousPageButton
+            // 
+            PreviousPageButton.Location = new Point(57, 323);
+            PreviousPageButton.Name = "PreviousPageButton";
+            PreviousPageButton.Size = new Size(75, 23);
+            PreviousPageButton.TabIndex = 15;
+            PreviousPageButton.Text = "Previous";
+            PreviousPageButton.UseVisualStyleBackColor = true;
+            PreviousPageButton.Click += PreviousPageButton_Click;
+            // 
+            // UnwatchedOnlyCheckBox
+            // 
+            UnwatchedOnlyCheckBox.AutoSize = true;
+            UnwatchedOnlyCheckBox.Location = new Point(57, 26);
+            UnwatchedOnlyCheckBox.Name = "UnwatchedOnlyCheckBox";
+            UnwatchedOnlyCheckBox.Size = new Size(150, 19);
+            UnwatchedOnlyCheckBox.TabIndex = 14;
+            UnwatchedOnlyCheckBox.Text = "Show not watched only";
+            UnwatchedOnlyCheckBox.UseVisualStyleBackColor = true;
+            UnwatchedOnlyCheckBox.CheckedChanged += UnwatchedOnlyCheckBox_CheckedChanged;
+            // 
+            // SortOptions
+            // 
+            SortOptions.DropDownStyle = ComboBoxStyle.DropDownList;
+            SortOptions.FormattingEnabled = true;
+            SortOptions.Items.AddRange(new object[] { "Title", "Year", "Run Time" });
+            SortOptions.Location = new Point(57, 52);
+            SortOptions.Name = "SortOptions";
+            SortOptions.Size = new Size(121, 23);
+            SortOptions.TabIndex = 13;
+            SortOptions.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            // 
             // ManageMovieButton
             // 
-            ManageMovieButton.Location = new Point(268, 323);
+            ManageMovieButton.Location = new Point(268, 360);
             ManageMovieButton.Name = "ManageMovieButton";
             ManageMovieButton.Size = new Size(122, 23);
             ManageMovieButton.TabIndex = 12;
             ManageMovieButton.Text = "Manage";
             ManageMovieButton.UseVisualStyleBackColor = true;
             ManageMovieButton.Click += ManageMovieButton_Click;
-            // 
-            // LoadFromFileButton
-            // 
-            LoadFromFileButton.Location = new Point(379, 379);
-            LoadFromFileButton.Name = "LoadFromFileButton";
-            LoadFromFileButton.Size = new Size(122, 23);
-            LoadFromFileButton.TabIndex = 11;
-            LoadFromFileButton.Text = "Load from file";
-            LoadFromFileButton.UseVisualStyleBackColor = true;
-            LoadFromFileButton.Click += LoadFromFileButton_click;
-            // 
-            // SaveToFileButton
-            // 
-            SaveToFileButton.Location = new Point(165, 379);
-            SaveToFileButton.Name = "SaveToFileButton";
-            SaveToFileButton.Size = new Size(122, 23);
-            SaveToFileButton.TabIndex = 10;
-            SaveToFileButton.Text = "Save to file";
-            SaveToFileButton.UseVisualStyleBackColor = true;
-            SaveToFileButton.Click += SaveToFileButton_click;
             // 
             // CollectionMoviesList
             // 
@@ -216,7 +300,6 @@
             CollectionMoviesList.Name = "CollectionMoviesList";
             CollectionMoviesList.Size = new Size(559, 229);
             CollectionMoviesList.TabIndex = 1;
-            CollectionMoviesList.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // YourCollectionLabel
             // 
@@ -232,15 +315,16 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button4);
             Controls.Add(CollectionPanelButton);
             Controls.Add(SearchPanelButton);
             Controls.Add(CollectionPanel);
             Controls.Add(SearchPanel);
             Name = "MainMenu";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "MainMenu";
             SearchPanel.ResumeLayout(false);
             SearchPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)MoviePoster).EndInit();
             CollectionPanel.ResumeLayout(false);
             CollectionPanel.PerformLayout();
             ResumeLayout(false);
@@ -254,7 +338,6 @@
         private Panel SearchPanel;
         private Button SearchPanelButton;
         private Button CollectionPanelButton;
-        private Button button4;
         private Panel CollectionPanel;
         private Label YourCollectionLabel;
         private Label DirectorLabel;
@@ -263,8 +346,16 @@
         private Label ReleaseYearLabel;
         private Button AddToCollectionButton;
         private ListBox CollectionMoviesList;
-        private Button SaveToFileButton;
-        private Button LoadFromFileButton;
         private Button ManageMovieButton;
+        private Label PlotLabel;
+        private PictureBox MoviePoster;
+        private ComboBox SortOptions;
+        private CheckBox UnwatchedOnlyCheckBox;
+        private Button NextPageButton;
+        private Button PreviousPageButton;
+        private Label PageLabel;
+        private Button ShowDetailsButton;
+        private Button NameSearchButton;
+        private TextBox NameSearchBox;
     }
 }

@@ -31,11 +31,13 @@
             label1 = new Label();
             checkBox1 = new CheckBox();
             RemoveMovieButton = new Button();
+            MoviePoster = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)MoviePoster).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
-            label1.Location = new Point(90, 55);
+            label1.Location = new Point(87, 55);
             label1.Name = "label1";
             label1.Size = new Size(246, 15);
             label1.TabIndex = 0;
@@ -55,7 +57,7 @@
             // 
             // RemoveMovieButton
             // 
-            RemoveMovieButton.Location = new Point(266, 173);
+            RemoveMovieButton.Location = new Point(158, 170);
             RemoveMovieButton.Name = "RemoveMovieButton";
             RemoveMovieButton.Size = new Size(104, 40);
             RemoveMovieButton.TabIndex = 2;
@@ -63,16 +65,28 @@
             RemoveMovieButton.UseVisualStyleBackColor = true;
             RemoveMovieButton.Click += RemoveMovieButton_Click;
             // 
+            // MoviePoster
+            // 
+            MoviePoster.Location = new Point(22, 26);
+            MoviePoster.Name = "MoviePoster";
+            MoviePoster.Size = new Size(108, 174);
+            MoviePoster.SizeMode = PictureBoxSizeMode.StretchImage;
+            MoviePoster.TabIndex = 3;
+            MoviePoster.TabStop = false;
+            // 
             // MovieControl
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(419, 241);
+            Controls.Add(MoviePoster);
             Controls.Add(RemoveMovieButton);
             Controls.Add(checkBox1);
             Controls.Add(label1);
             Name = "MovieControl";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "MovieControl";
+            ((System.ComponentModel.ISupportInitialize)MoviePoster).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -82,5 +96,6 @@
         private Label label1;
         private CheckBox checkBox1;
         private Button RemoveMovieButton;
+        private PictureBox MoviePoster;
     }
 }
