@@ -112,6 +112,10 @@ namespace Movie_Manager.Forms
             }
             else
             {
+                if(currentMovie.imdbRating == "N/A" || currentMovie.imdbRating == null)
+                {
+                    currentMovie.imdbRating = "0";
+                }
                 myMovies.Add(currentMovie);
                 using (MySqlConnection conn = new MySqlConnection(connectionString))
                 {
@@ -271,9 +275,14 @@ namespace Movie_Manager.Forms
                     break;
                 case "Year":
                     myMovies = myMovies.OrderBy(m => m.Year).ToList();
+                    myMovies.Reverse();
                     break;
                 case "Run Time":
                     myMovies = myMovies.OrderBy(m => m.Runtime).ToList();
+                    break;
+                case "Rating":
+                    myMovies = myMovies.OrderBy(m => m.imdbRating).ToList();
+                    myMovies.Reverse();
                     break;
             }
 

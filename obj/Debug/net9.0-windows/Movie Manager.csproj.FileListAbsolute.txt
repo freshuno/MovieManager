@@ -49,3 +49,4 @@ E:\C#projects\MovieManager\obj\Debug\net9.0-windows\Movie Manager.csproj.Assembl
 E:\C#projects\MovieManager\obj\Debug\net9.0-windows\Movie Ma.C7DAF4FF.Up2Date
 E:\C#projects\MovieManager\obj\Debug\net9.0-windows\Movie_Manager.Forms.MovieDetails.resources
 E:\C#projects\MovieManager\obj\Debug\net9.0-windows\Movie_Manager.Forms.Login.resources
+E:\C#projects\MovieManager\obj\Debug\net9.0-windows\Movie_Manager.Resources.resources

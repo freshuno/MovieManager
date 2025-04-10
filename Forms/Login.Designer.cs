@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             ApiKeyLabel = new Label();
             label1 = new Label();
             ApiKeyBox = new TextBox();
@@ -38,7 +39,7 @@
             // ApiKeyLabel
             // 
             ApiKeyLabel.AutoSize = true;
-            ApiKeyLabel.Location = new Point(3, 88);
+            ApiKeyLabel.Location = new Point(31, 64);
             ApiKeyLabel.Name = "ApiKeyLabel";
             ApiKeyLabel.Size = new Size(88, 15);
             ApiKeyLabel.TabIndex = 0;
@@ -46,7 +47,7 @@
             // 
             // label1
             // 
-            label1.Location = new Point(3, 120);
+            label1.Location = new Point(31, 102);
             label1.Name = "label1";
             label1.Size = new Size(174, 56);
             label1.TabIndex = 1;
@@ -54,14 +55,14 @@
             // 
             // ApiKeyBox
             // 
-            ApiKeyBox.Location = new Point(183, 85);
+            ApiKeyBox.Location = new Point(214, 64);
             ApiKeyBox.Name = "ApiKeyBox";
             ApiKeyBox.Size = new Size(100, 23);
             ApiKeyBox.TabIndex = 2;
             // 
             // PasswordBox
             // 
-            PasswordBox.Location = new Point(183, 117);
+            PasswordBox.Location = new Point(214, 102);
             PasswordBox.Name = "PasswordBox";
             PasswordBox.Size = new Size(100, 23);
             PasswordBox.TabIndex = 3;
@@ -69,7 +70,7 @@
             // 
             // LoginButton
             // 
-            LoginButton.Location = new Point(130, 189);
+            LoginButton.Location = new Point(130, 171);
             LoginButton.Name = "LoginButton";
             LoginButton.Size = new Size(75, 23);
             LoginButton.TabIndex = 4;
@@ -87,8 +88,12 @@
             Controls.Add(ApiKeyBox);
             Controls.Add(label1);
             Controls.Add(ApiKeyLabel);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "Login";
-            Text = "Login";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Movie Manager";
             ResumeLayout(false);
             PerformLayout();
         }

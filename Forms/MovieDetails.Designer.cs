@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MovieDetails));
             MoviePoster = new PictureBox();
             MovieTitle = new Label();
             MovieReleaseYear = new Label();
@@ -146,9 +147,12 @@
             Controls.Add(MovieReleaseYear);
             Controls.Add(MovieTitle);
             Controls.Add(MoviePoster);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "MovieDetails";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "MovieDetails";
+            Text = "MovieManager - Movie details";
             ((System.ComponentModel.ISupportInitialize)MoviePoster).EndInit();
             ResumeLayout(false);
             PerformLayout();

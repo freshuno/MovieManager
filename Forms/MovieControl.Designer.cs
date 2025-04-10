@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MovieControl));
             label1 = new Label();
             checkBox1 = new CheckBox();
             RemoveMovieButton = new Button();
@@ -37,9 +38,9 @@
             // 
             // label1
             // 
-            label1.Location = new Point(87, 55);
+            label1.Location = new Point(136, 12);
             label1.Name = "label1";
-            label1.Size = new Size(246, 15);
+            label1.Size = new Size(200, 155);
             label1.TabIndex = 0;
             label1.Text = "label1";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -47,7 +48,7 @@
             // checkBox1
             // 
             checkBox1.AutoSize = true;
-            checkBox1.Location = new Point(324, 112);
+            checkBox1.Location = new Point(284, 181);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(73, 19);
             checkBox1.TabIndex = 1;
@@ -83,9 +84,12 @@
             Controls.Add(RemoveMovieButton);
             Controls.Add(checkBox1);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "MovieControl";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "MovieControl";
+            Text = "Movie Manager - Movie control";
             ((System.ComponentModel.ISupportInitialize)MoviePoster).EndInit();
             ResumeLayout(false);
             PerformLayout();

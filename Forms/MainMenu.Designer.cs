@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             MovieTitle = new Label();
             MovieTitleSearchBox = new TextBox();
             SearchButton = new Button();
@@ -276,7 +277,7 @@
             // 
             SortOptions.DropDownStyle = ComboBoxStyle.DropDownList;
             SortOptions.FormattingEnabled = true;
-            SortOptions.Items.AddRange(new object[] { "Title", "Year", "Run Time" });
+            SortOptions.Items.AddRange(new object[] { "Title", "Year", "Run Time", "Rating" });
             SortOptions.Location = new Point(57, 52);
             SortOptions.Name = "SortOptions";
             SortOptions.Size = new Size(121, 23);
@@ -319,6 +320,9 @@
             Controls.Add(SearchPanelButton);
             Controls.Add(CollectionPanel);
             Controls.Add(SearchPanel);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             Name = "MainMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "MainMenu";
