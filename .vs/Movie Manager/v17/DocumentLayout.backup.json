@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "E:\\C#projects\\MovieManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|e:\\c#projects\\moviemanager\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|solutionrelative:forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|e:\\c#projects\\moviemanager\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|solutionrelative:forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|E:\\C#projects\\MovieManager\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|solutionrelative:forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|e:\\c#projects\\moviemanager\\forms\\moviedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|solutionrelative:forms\\moviedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|e:\\c#projects\\moviemanager\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|solutionrelative:forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|e:\\c#projects\\moviemanager\\forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|solutionrelative:forms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|e:\\c#projects\\moviemanager\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|solutionrelative:forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|e:\\c#projects\\moviemanager\\forms\\moviecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|solutionrelative:forms\\moviecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|e:\\c#projects\\moviemanager\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|E:\\C#projects\\MovieManager\\forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|solutionrelative:forms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -35,7 +35,7 @@
       "RelativeMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|e:\\c#projects\\moviemanager\\forms\\moviedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|E:\\C#projects\\MovieManager\\forms\\moviedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DE119EC4-55E2-4798-9902-BBACD1B4BD7F}|Movie Manager.csproj|solutionrelative:forms\\moviedetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,32 +74,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Login.cs",
               "DocumentMoniker": "E:\\C#projects\\MovieManager\\Forms\\Login.cs",
               "RelativeDocumentMoniker": "Forms\\Login.cs",
               "ToolTip": "E:\\C#projects\\MovieManager\\Forms\\Login.cs",
               "RelativeToolTip": "Forms\\Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAIwBwAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T14:38:42.849Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "E:\\C#projects\\MovieManager\\Forms\\Login.cs",
               "RelativeDocumentMoniker": "Forms\\Login.cs",
               "ToolTip": "E:\\C#projects\\MovieManager\\Forms\\Login.cs [Design]",
               "RelativeToolTip": "Forms\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T14:35:14.267Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-10T14:35:14.267Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MovieDetails.cs",
               "DocumentMoniker": "E:\\C#projects\\MovieManager\\Forms\\MovieDetails.cs",
               "RelativeDocumentMoniker": "Forms\\MovieDetails.cs",
@@ -125,13 +124,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "E:\\C#projects\\MovieManager\\Forms\\MainMenu.cs",
               "RelativeDocumentMoniker": "Forms\\MainMenu.cs",
               "ToolTip": "E:\\C#projects\\MovieManager\\Forms\\MainMenu.cs",
               "RelativeToolTip": "Forms\\MainMenu.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAjwBkAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAjwBkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-06T13:57:33.891Z",
               "EditorCaption": ""
@@ -145,8 +144,7 @@
               "ToolTip": "E:\\C#projects\\MovieManager\\Forms\\MovieControl.cs [Design]",
               "RelativeToolTip": "Forms\\MovieControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T16:11:01.422Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-06T16:11:01.422Z"
             },
             {
               "$type": "Document",
@@ -157,8 +155,7 @@
               "ToolTip": "E:\\C#projects\\MovieManager\\Forms\\MovieDetails.cs [Design]",
               "RelativeToolTip": "Forms\\MovieDetails.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T13:28:19.841Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-10T13:28:19.841Z"
             },
             {
               "$type": "Document",
@@ -169,8 +166,7 @@
               "ToolTip": "E:\\C#projects\\MovieManager\\Forms\\MainMenu.cs [Design]",
               "RelativeToolTip": "Forms\\MainMenu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-10T11:23:29.128Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-10T11:23:29.128Z"
             },
             {
               "$type": "Document",
@@ -182,8 +178,7 @@
               "RelativeToolTip": "Forms\\MainMenu.Designer.cs",
               "ViewState": "AgIAAEcBAAAAAAAAAAAnwE4BAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T13:55:46.592Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T13:55:46.592Z"
             },
             {
               "$type": "Document",
@@ -195,8 +190,7 @@
               "RelativeToolTip": "Classes\\Movie.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAA7wCAAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T13:58:32.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T13:58:32.694Z"
             },
             {
               "$type": "Document",
@@ -208,8 +202,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T13:54:14.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T13:54:14.408Z"
             },
             {
               "$type": "Document",
@@ -220,8 +213,7 @@
               "ToolTip": "E:\\C#projects\\MovieManager\\Forms\\MainMenu.resx",
               "RelativeToolTip": "Forms\\MainMenu.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-04-06T14:17:55.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T14:17:55.153Z"
             },
             {
               "$type": "Document",
@@ -233,8 +225,7 @@
               "RelativeToolTip": "Movie Manager.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-06T13:52:01.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T13:52:01.218Z"
             }
           ]
         }

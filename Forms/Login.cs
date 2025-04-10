@@ -26,6 +26,7 @@ namespace Movie_Manager.Forms
             if (omdbConnectionTest() && dbConnectionTest())
             {
                 MainMenu mainMenu = new MainMenu(ApiKeyBox.Text, PasswordBox.Text);
+                mainMenu.FormClosed += MainMenu_FormClosed;
                 this.Hide();
                 mainMenu.Show();
             }
