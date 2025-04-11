@@ -77,6 +77,7 @@ namespace Movie_Manager.Forms
                     DirectorLabel.Text = "";
                     PlotLabel.Text = "";
                     MoviePoster.Image = null;
+                    TotalSeasonsLabel.Text = "";
                 }
                 else
                 {
@@ -97,6 +98,7 @@ namespace Movie_Manager.Forms
                     GenreLabel.Text = "Genre " + movie.Genre;
                     DirectorLabel.Text = "Director: " + movie.Director;
                     PlotLabel.Text = "Plot: " + movie.Plot;
+                    TotalSeasonsLabel.Text = "";
                 }
                 if (movie.Type == "series")
                 {
@@ -105,6 +107,7 @@ namespace Movie_Manager.Forms
                     GenreLabel.Text = "Genre " + movie.Genre;
                     DirectorLabel.Text = "";
                     PlotLabel.Text = "Plot: " + movie.Plot;
+                    TotalSeasonsLabel.Text = "Total Seasons: " + movie.totalSeasons;
                 }
             }
         }
@@ -130,7 +133,7 @@ namespace Movie_Manager.Forms
             }
             else
             {
-                if(currentMovie.imdbRating == "N/A" || currentMovie.imdbRating == null)
+                if (currentMovie.imdbRating == "N/A" || currentMovie.imdbRating == null)
                 {
                     currentMovie.imdbRating = "0";
                 }
@@ -192,6 +195,10 @@ namespace Movie_Manager.Forms
                 MessageBox.Show("Movie has been added to your collection");
                 MovieListRefresh();
             }
+        }
+        private void ExitButton_click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
         private void ManageMovieButton_Click(object sender, EventArgs e)
         {
@@ -286,7 +293,7 @@ namespace Movie_Manager.Forms
             {
                 currentPage = totalPages;
             }
-            if(totalPages == 1)
+            if (totalPages == 1)
             {
                 currentPage = 1;
             }
@@ -351,8 +358,8 @@ namespace Movie_Manager.Forms
 
         private void NameSearchButton_Click(object sender, EventArgs e)
         {
-            var searchedMovie = myMovies.FirstOrDefault(m =>m.Title != null && m.Title.Equals(NameSearchBox.Text, StringComparison.OrdinalIgnoreCase));
-            if(searchedMovie == null)
+            var searchedMovie = myMovies.FirstOrDefault(m => m.Title != null && m.Title.Equals(NameSearchBox.Text, StringComparison.OrdinalIgnoreCase));
+            if (searchedMovie == null)
             {
                 MessageBox.Show("Movie not found in your collection");
             }

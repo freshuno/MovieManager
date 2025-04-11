@@ -26,7 +26,14 @@ namespace Movie_Manager.Forms
             {
                 MovieType.Text = "Type: Series";
                 MovieReleaseYear.Text = "Running years: " + Movie.Year;
-                MovieRuntime.Text = "Total Seasons: " + Movie.totalSeasons;
+                if(Movie.totalSeasons!= null)
+                {
+                    MovieRuntime.Text = "Total Seasons: " + Movie.totalSeasons;
+                }
+                else
+                {
+                    MovieRuntime.Text = "Unknown number of seasons";
+                }
             }
             else
             {

@@ -33,6 +33,7 @@
             MovieTitleSearchBox = new TextBox();
             SearchButton = new Button();
             SearchPanel = new Panel();
+            TotalSeasonsLabel = new Label();
             MoviePoster = new PictureBox();
             PlotLabel = new Label();
             AddToCollectionButton = new Button();
@@ -43,6 +44,7 @@
             SearchPanelButton = new Button();
             CollectionPanelButton = new Button();
             CollectionPanel = new Panel();
+            SortLabel = new Label();
             NameSearchButton = new Button();
             NameSearchBox = new TextBox();
             ShowDetailsButton = new Button();
@@ -54,6 +56,7 @@
             ManageMovieButton = new Button();
             CollectionMoviesList = new ListBox();
             YourCollectionLabel = new Label();
+            ExitButton = new Button();
             SearchPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)MoviePoster).BeginInit();
             CollectionPanel.SuspendLayout();
@@ -61,9 +64,10 @@
             // 
             // MovieTitle
             // 
-            MovieTitle.Location = new Point(195, 70);
+            MovieTitle.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            MovieTitle.Location = new Point(191, 26);
             MovieTitle.Name = "MovieTitle";
-            MovieTitle.Size = new Size(228, 84);
+            MovieTitle.Size = new Size(228, 128);
             MovieTitle.TabIndex = 0;
             MovieTitle.Text = "Welcome to Movie Manager";
             MovieTitle.TextAlign = ContentAlignment.MiddleCenter;
@@ -89,6 +93,7 @@
             // 
             // SearchPanel
             // 
+            SearchPanel.Controls.Add(TotalSeasonsLabel);
             SearchPanel.Controls.Add(MoviePoster);
             SearchPanel.Controls.Add(PlotLabel);
             SearchPanel.Controls.Add(AddToCollectionButton);
@@ -103,6 +108,14 @@
             SearchPanel.Name = "SearchPanel";
             SearchPanel.Size = new Size(661, 426);
             SearchPanel.TabIndex = 3;
+            // 
+            // TotalSeasonsLabel
+            // 
+            TotalSeasonsLabel.AutoSize = true;
+            TotalSeasonsLabel.Location = new Point(-1, 302);
+            TotalSeasonsLabel.Name = "TotalSeasonsLabel";
+            TotalSeasonsLabel.Size = new Size(0, 15);
+            TotalSeasonsLabel.TabIndex = 12;
             // 
             // MoviePoster
             // 
@@ -169,7 +182,7 @@
             // 
             // SearchPanelButton
             // 
-            SearchPanelButton.Location = new Point(12, 63);
+            SearchPanelButton.Location = new Point(12, 128);
             SearchPanelButton.Name = "SearchPanelButton";
             SearchPanelButton.Size = new Size(75, 23);
             SearchPanelButton.TabIndex = 4;
@@ -179,7 +192,7 @@
             // 
             // CollectionPanelButton
             // 
-            CollectionPanelButton.Location = new Point(12, 130);
+            CollectionPanelButton.Location = new Point(12, 203);
             CollectionPanelButton.Name = "CollectionPanelButton";
             CollectionPanelButton.Size = new Size(75, 47);
             CollectionPanelButton.TabIndex = 5;
@@ -189,6 +202,7 @@
             // 
             // CollectionPanel
             // 
+            CollectionPanel.Controls.Add(SortLabel);
             CollectionPanel.Controls.Add(NameSearchButton);
             CollectionPanel.Controls.Add(NameSearchBox);
             CollectionPanel.Controls.Add(ShowDetailsButton);
@@ -204,6 +218,15 @@
             CollectionPanel.Name = "CollectionPanel";
             CollectionPanel.Size = new Size(661, 426);
             CollectionPanel.TabIndex = 3;
+            // 
+            // SortLabel
+            // 
+            SortLabel.AutoSize = true;
+            SortLabel.Location = new Point(4, 55);
+            SortLabel.Name = "SortLabel";
+            SortLabel.Size = new Size(47, 15);
+            SortLabel.TabIndex = 21;
+            SortLabel.Text = "Sort by:";
             // 
             // NameSearchButton
             // 
@@ -311,15 +334,26 @@
             YourCollectionLabel.TabIndex = 0;
             YourCollectionLabel.Text = "My Collection";
             // 
+            // ExitButton
+            // 
+            ExitButton.Location = new Point(12, 296);
+            ExitButton.Name = "ExitButton";
+            ExitButton.Size = new Size(75, 33);
+            ExitButton.TabIndex = 6;
+            ExitButton.Text = "Exit";
+            ExitButton.UseVisualStyleBackColor = true;
+            ExitButton.Click += ExitButton_click;
+            // 
             // MainMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(CollectionPanelButton);
-            Controls.Add(SearchPanelButton);
             Controls.Add(SearchPanel);
             Controls.Add(CollectionPanel);
+            Controls.Add(ExitButton);
+            Controls.Add(CollectionPanelButton);
+            Controls.Add(SearchPanelButton);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
@@ -361,5 +395,8 @@
         private Button ShowDetailsButton;
         private Button NameSearchButton;
         private TextBox NameSearchBox;
+        private Button ExitButton;
+        private Label SortLabel;
+        private Label TotalSeasonsLabel;
     }
 }

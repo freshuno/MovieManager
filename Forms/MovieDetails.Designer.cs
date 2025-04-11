@@ -53,17 +53,18 @@
             // 
             // MovieTitle
             // 
-            MovieTitle.AutoSize = true;
-            MovieTitle.Location = new Point(345, 33);
+            MovieTitle.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
+            MovieTitle.Location = new Point(318, 9);
             MovieTitle.Name = "MovieTitle";
-            MovieTitle.Size = new Size(38, 15);
+            MovieTitle.Size = new Size(220, 31);
             MovieTitle.TabIndex = 1;
             MovieTitle.Text = "label1";
+            MovieTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // MovieReleaseYear
             // 
             MovieReleaseYear.AutoSize = true;
-            MovieReleaseYear.Location = new Point(274, 96);
+            MovieReleaseYear.Location = new Point(274, 114);
             MovieReleaseYear.Name = "MovieReleaseYear";
             MovieReleaseYear.Size = new Size(38, 15);
             MovieReleaseYear.TabIndex = 2;
@@ -72,7 +73,7 @@
             // MovieRated
             // 
             MovieRated.AutoSize = true;
-            MovieRated.Location = new Point(274, 132);
+            MovieRated.Location = new Point(274, 152);
             MovieRated.Name = "MovieRated";
             MovieRated.Size = new Size(38, 15);
             MovieRated.TabIndex = 3;
@@ -81,7 +82,7 @@
             // MovieRuntime
             // 
             MovieRuntime.AutoSize = true;
-            MovieRuntime.Location = new Point(274, 172);
+            MovieRuntime.Location = new Point(274, 194);
             MovieRuntime.Name = "MovieRuntime";
             MovieRuntime.Size = new Size(38, 15);
             MovieRuntime.TabIndex = 4;
@@ -90,7 +91,7 @@
             // MovieGenre
             // 
             MovieGenre.AutoSize = true;
-            MovieGenre.Location = new Point(274, 211);
+            MovieGenre.Location = new Point(274, 236);
             MovieGenre.Name = "MovieGenre";
             MovieGenre.Size = new Size(38, 15);
             MovieGenre.TabIndex = 5;
@@ -108,7 +109,7 @@
             // MovieIMDBRating
             // 
             MovieIMDBRating.AutoSize = true;
-            MovieIMDBRating.Location = new Point(274, 246);
+            MovieIMDBRating.Location = new Point(274, 275);
             MovieIMDBRating.Name = "MovieIMDBRating";
             MovieIMDBRating.Size = new Size(38, 15);
             MovieIMDBRating.TabIndex = 7;
@@ -117,7 +118,7 @@
             // WatchStatus
             // 
             WatchStatus.AutoSize = true;
-            WatchStatus.Location = new Point(274, 386);
+            WatchStatus.Location = new Point(274, 363);
             WatchStatus.Name = "WatchStatus";
             WatchStatus.Size = new Size(38, 15);
             WatchStatus.TabIndex = 8;
@@ -126,7 +127,7 @@
             // MovieType
             // 
             MovieType.AutoSize = true;
-            MovieType.Location = new Point(274, 65);
+            MovieType.Location = new Point(274, 78);
             MovieType.Name = "MovieType";
             MovieType.Size = new Size(38, 15);
             MovieType.TabIndex = 9;
