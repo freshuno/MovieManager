@@ -66,6 +66,7 @@ If you want to import a pre-made database for testing, follow these steps:
 - Open the terminal and move to the directory where MySQL is installed, e.g.: C:\Program Files\MySQL\MySQL Server 8.0\bin
 - Type the following command: mysql -u root -p < path_to_file/moviemanager_movies.sql
 - Enter your MySQL password when prompted.
+- Restart the application.
 
 ---
 
