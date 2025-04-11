@@ -37,8 +37,8 @@ To run the application, install the .NET Desktop Runtime 9.0.4:
 
 1. Go to the following page:  
    👉 [Register for a free OMDb account](https://www.omdbapi.com/apikey.aspx?__EVENTTARGET=freeAcct)
-2. Fill out the form and select the free plan (`Free`).
-3. Confirm your registration by clicking the activation link sent to your email.
+2. Select the free plan (`FREE`) and fill out the form
+3. Activate api key by clicking the activation link sent to your email.
 4. Copy your API key — you'll need it the first time you run the application.
 
 ---
