@@ -46,7 +46,7 @@ Aby uruchomić aplikację, zainstaluj .NET Desktop Runtime 9.0.4:
 
 1. Pobierz najnowszą wersję aplikacji:  
    👉 [Movie Manager - Download](https://shorturl.at/Z9gdd)
-2. Rozpakuj pobrane archiwum `.zip`.
+2. Rozpakuj pobrane archiwum `.rar`.
 3. Uruchom plik `MovieManager.exe`.
 
 ---
