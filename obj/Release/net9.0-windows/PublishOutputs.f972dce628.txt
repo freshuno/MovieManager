@@ -1,0 +1,17 @@
+C:\Users\nigger\Desktop\New folder\Movie Manager.exe
+C:\Users\nigger\Desktop\New folder\Movie Manager.dll
+C:\Users\nigger\Desktop\New folder\Movie Manager.deps.json
+C:\Users\nigger\Desktop\New folder\Movie Manager.runtimeconfig.json
+C:\Users\nigger\Desktop\New folder\Movie Manager.pdb
+C:\Users\nigger\Desktop\New folder\BouncyCastle.Cryptography.dll
+C:\Users\nigger\Desktop\New folder\Google.Protobuf.dll
+C:\Users\nigger\Desktop\New folder\K4os.Compression.LZ4.dll
+C:\Users\nigger\Desktop\New folder\K4os.Compression.LZ4.Streams.dll
+C:\Users\nigger\Desktop\New folder\K4os.Hash.xxHash.dll
+C:\Users\nigger\Desktop\New folder\MySql.Data.dll
+C:\Users\nigger\Desktop\New folder\ZstdSharp.dll
+C:\Users\nigger\Desktop\New folder\runtimes\win-x64\native\comerr64.dll
+C:\Users\nigger\Desktop\New folder\runtimes\win-x64\native\gssapi64.dll
+C:\Users\nigger\Desktop\New folder\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\nigger\Desktop\New folder\runtimes\win-x64\native\krb5_64.dll
+C:\Users\nigger\Desktop\New folder\runtimes\win-x64\native\krbcc64.dll

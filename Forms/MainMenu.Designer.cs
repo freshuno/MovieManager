@@ -126,7 +126,7 @@
             // 
             // AddToCollectionButton
             // 
-            AddToCollectionButton.Location = new Point(241, 389);
+            AddToCollectionButton.Location = new Point(241, 229);
             AddToCollectionButton.Name = "AddToCollectionButton";
             AddToCollectionButton.Size = new Size(122, 23);
             AddToCollectionButton.TabIndex = 9;
@@ -138,7 +138,7 @@
             // DirectorLabel
             // 
             DirectorLabel.AutoSize = true;
-            DirectorLabel.Location = new Point(20, 359);
+            DirectorLabel.Location = new Point(-1, 359);
             DirectorLabel.Name = "DirectorLabel";
             DirectorLabel.Size = new Size(0, 15);
             DirectorLabel.TabIndex = 8;
@@ -146,7 +146,7 @@
             // GenreLabel
             // 
             GenreLabel.AutoSize = true;
-            GenreLabel.Location = new Point(20, 331);
+            GenreLabel.Location = new Point(-1, 331);
             GenreLabel.Name = "GenreLabel";
             GenreLabel.Size = new Size(0, 15);
             GenreLabel.TabIndex = 7;
@@ -154,7 +154,7 @@
             // RunTimeLabel
             // 
             RunTimeLabel.AutoSize = true;
-            RunTimeLabel.Location = new Point(20, 302);
+            RunTimeLabel.Location = new Point(-1, 302);
             RunTimeLabel.Name = "RunTimeLabel";
             RunTimeLabel.Size = new Size(0, 15);
             RunTimeLabel.TabIndex = 6;
@@ -162,7 +162,7 @@
             // ReleaseYearLabel
             // 
             ReleaseYearLabel.AutoSize = true;
-            ReleaseYearLabel.Location = new Point(20, 271);
+            ReleaseYearLabel.Location = new Point(-1, 271);
             ReleaseYearLabel.Name = "ReleaseYearLabel";
             ReleaseYearLabel.Size = new Size(0, 15);
             ReleaseYearLabel.TabIndex = 7;
@@ -318,8 +318,8 @@
             ClientSize = new Size(800, 450);
             Controls.Add(CollectionPanelButton);
             Controls.Add(SearchPanelButton);
-            Controls.Add(CollectionPanel);
             Controls.Add(SearchPanel);
+            Controls.Add(CollectionPanel);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;

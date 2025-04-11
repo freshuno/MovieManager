@@ -156,7 +156,7 @@ namespace Movie_Manager.Forms
                         cmd.ExecuteNonQuery();
                     }
                 }
-                MessageBox.Show("Film dodany do listy");
+                MessageBox.Show("Movie has been added to your collection");
                 MovieListRefresh();
             }
         }
@@ -164,7 +164,7 @@ namespace Movie_Manager.Forms
         {
             try
             {
-                MovieControl movieControl = new MovieControl(moviesToDisplay[CollectionMoviesList.SelectedIndex + pageSize * (currentPage - 1)], myMovies);
+                MovieControl movieControl = new MovieControl(moviesToDisplay[CollectionMoviesList.SelectedIndex + pageSize * (currentPage - 1)], myMovies, connectionString);
                 movieControl.ShowDialog();
                 MovieListRefresh();
             }
@@ -180,7 +180,6 @@ namespace Movie_Manager.Forms
             {
                 MovieDetails movieDetails = new MovieDetails(moviesToDisplay[CollectionMoviesList.SelectedIndex + pageSize * (currentPage - 1)]);
                 movieDetails.ShowDialog();
-                MovieListRefresh();
             }
             catch (Exception)
             {
@@ -252,6 +251,10 @@ namespace Movie_Manager.Forms
             if (currentPage > totalPages)
             {
                 currentPage = totalPages;
+            }
+            if(totalPages == 1)
+            {
+                currentPage = 1;
             }
             var paginatedMovies = moviesToDisplay
                 .Skip((currentPage - 1) * pageSize)

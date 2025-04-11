@@ -15,12 +15,13 @@ namespace Movie_Manager.Forms
 {
     public partial class MovieControl : Form
     {
-        readonly string connectionString = "server=localhost;user=root;password=Callofduty12;database=MovieManager;";
+        string connectionString;
         Movie selectedMovie;
         List<Movie> movies;
-        public MovieControl(Movie Movie, List<Movie> Movies)
+        public MovieControl(Movie Movie, List<Movie> Movies, string ConnectionString)
         {
             InitializeComponent();
+            connectionString = ConnectionString;
             selectedMovie = Movie;
             movies = Movies;
             label1.Text = Movie.Title;
