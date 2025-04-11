@@ -54,7 +54,7 @@ To run the application, install the .NET Desktop Runtime 9.0.4:
 
 ## 🚀 Launching the Application
 
-1. On the first launch, you’ll be asked to provide:
+1. When launching, you’ll be asked to provide:
    - **OMDb API Key** (from step 3)
    - **MySQL password**, which you set in step 2
 2. The application will automatically connect to the database and fetch movie data.
