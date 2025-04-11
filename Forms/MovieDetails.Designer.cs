@@ -54,9 +54,9 @@
             // MovieTitle
             // 
             MovieTitle.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 238);
-            MovieTitle.Location = new Point(318, 9);
+            MovieTitle.Location = new Point(274, 9);
             MovieTitle.Name = "MovieTitle";
-            MovieTitle.Size = new Size(220, 31);
+            MovieTitle.Size = new Size(353, 62);
             MovieTitle.TabIndex = 1;
             MovieTitle.Text = "label1";
             MovieTitle.TextAlign = ContentAlignment.MiddleCenter;
