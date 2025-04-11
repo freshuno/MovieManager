@@ -13,21 +13,22 @@ Movie Manager is a desktop application for managing your personal movie collecti
 
 ## ✅ Step-by-Step Installation
 
-### 1. Install .NET Runtime
+### 1. Install .NET Runtime (if you don't have it)
 
 To run the application, install the .NET Desktop Runtime 9.0.4:
 
 👉 [Download the installer](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-9.0.4-windows-x64-installer?cid=getdotnetcore)
 
-> ⚠️ Note: If you encounter an error during the MySQL installation, try installing this Runtime first.
-
 ---
 
-### 2. Install MySQL Server
+### 2. Install MySQL Server (if you don't have it)
 
 1. Download the MySQL Server installer:  
    👉 [MySQL Download](https://dev.mysql.com/downloads/mysql/)
-2. You can leave the default settings during installation.
+
+   > ⚠️ Note: If you encounter an error during the MySQL installation, try installing [this](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) first.
+
+2. You can leave the default settings during installation.  
 3. **Remember the password** you set for the `root` user — it will be required when launching the application.
 
 ---
@@ -46,7 +47,7 @@ To run the application, install the .NET Desktop Runtime 9.0.4:
 
 1. Download the latest version of the app:  
    👉 [Movie Manager - Download](https://shorturl.at/Z9gdd)
-2. Unzip the downloaded `.zip` archive.
+2. Unzip the downloaded `.rar` archive (you can use a tool like WinRAR or 7-Zip).
 3. Run the `MovieManager.exe` file.
 
 ---
