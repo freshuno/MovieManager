@@ -1,72 +1,71 @@
 # 🎬 Movie Manager
 
-Movie Manager to aplikacja desktopowa do zarządzania własną kolekcją filmów, korzystająca z bazy danych MySQL oraz zewnętrznego API OMDb do pobierania informacji o filmach i serialach.
+Movie Manager is a desktop application for managing your personal movie collection. It uses a MySQL database and the external OMDb API to fetch movie and series information.
 
 ---
 
-## ⚙️ Wymagania systemowe
+## ⚙️ System Requirements
 
 - Windows 10/11 (x64)
-- Połączenie z internetem (do pobierania danych z OMDb API)
+- Internet connection (for fetching data from the OMDb API)
 
 ---
 
-## ✅ Instalacja krok po kroku
+## ✅ Step-by-Step Installation
 
-### 1. Zainstaluj .NET Runtime
+### 1. Install .NET Runtime
 
-Aby uruchomić aplikację, zainstaluj .NET Desktop Runtime 9.0.4:
+To run the application, install the .NET Desktop Runtime 9.0.4:
 
-👉 [Pobierz instalator](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-9.0.4-windows-x64-installer?cid=getdotnetcore)
+👉 [Download the installer](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-9.0.4-windows-x64-installer?cid=getdotnetcore)
 
-> ⚠️ Uwaga: Jeśli pojawi się błąd podczas instalacji MySQL, spróbuj najpierw zainstalować ten Runtime.
+> ⚠️ Note: If you encounter an error during the MySQL installation, try installing this Runtime first.
 
 ---
 
-### 2. Zainstaluj MySQL Server
+### 2. Install MySQL Server
 
-1. Pobierz instalator MySQL Server:
+1. Download the MySQL Server installer:  
    👉 [MySQL Download](https://dev.mysql.com/downloads/mysql/)
-2. Podczas instalacji możesz zostawić ustawienia domyślne.
-3. **Zapamiętaj hasło**, które ustawisz dla użytkownika `root` — będzie potrzebne przy uruchamianiu aplikacji.
+2. You can leave the default settings during installation.
+3. **Remember the password** you set for the `root` user — it will be required when launching the application.
 
 ---
 
-### 3. Wygeneruj darmowy klucz OMDb API
+### 3. Generate a Free OMDb API Key
 
-1. Wejdź na stronę:  
-   👉 [Zarejestruj darmowe konto OMDb](https://www.omdbapi.com/apikey.aspx?__EVENTTARGET=freeAcct)
-2. Wypełnij formularz, wybierając darmowy plan (`Free`).
-3. Potwierdź rejestrację, klikając link aktywacyjny, który otrzymasz na maila.
-4. Skopiuj swój klucz API — będzie potrzebny przy pierwszym uruchomieniu aplikacji.
+1. Go to the following page:  
+   👉 [Register for a free OMDb account](https://www.omdbapi.com/apikey.aspx?__EVENTTARGET=freeAcct)
+2. Fill out the form and select the free plan (`Free`).
+3. Confirm your registration by clicking the activation link sent to your email.
+4. Copy your API key — you'll need it the first time you run the application.
 
 ---
 
-### 4. Pobierz aplikację Movie Manager
+### 4. Download the Movie Manager App
 
-1. Pobierz najnowszą wersję aplikacji:  
+1. Download the latest version of the app:  
    👉 [Movie Manager - Download](https://shorturl.at/Z9gdd)
-2. Rozpakuj pobrane archiwum `.rar`.
-3. Uruchom plik `MovieManager.exe`.
+2. Unzip the downloaded `.zip` archive.
+3. Run the `MovieManager.exe` file.
 
 ---
 
-## 🚀 Uruchomienie
+## 🚀 Launching the Application
 
-1. Przy pierwszym uruchomieniu zostaniesz poproszony o podanie:
-   - **API Key** z OMDb (z kroku 3)
-   - **Hasła do MySQL**, które ustawiłeś w kroku 2
-2. Aplikacja automatycznie połączy się z bazą danych i pobierze dane o filmach.
-3. Gotowe! Możesz przeszukiwać, dodawać i zarządzać własną kolekcją 🎥
-
----
-
-## ❓ Pomoc
-
-W przypadku problemów z instalacją:
-- Upewnij się, że masz zainstalowany .NET Runtime (krok 1)
-- Sprawdź, czy serwer MySQL działa i masz poprawne hasło
-- Sprawdź, czy klucz OMDb API jest aktywowany
+1. On the first launch, you’ll be asked to provide:
+   - **OMDb API Key** (from step 3)
+   - **MySQL password**, which you set in step 2
+2. The application will automatically connect to the database and fetch movie data.
+3. All set! You can now search, add, and manage your collection 🎥
 
 ---
 
+## ❓ Help
+
+If you run into installation issues:
+- Make sure .NET Runtime is installed (step 1)
+- Check if the MySQL server is running and you entered the correct password
+- Make sure your OMDb API key is activated
+
+---
