@@ -60,6 +60,13 @@ To run the application, install the .NET Desktop Runtime 9.0.4:
 2. The application will automatically connect to the database and fetch movie data.
 3. All set! You can now search, add, and manage your collection 🎥
 
+## 🛠️ Optional: Importing the Database
+
+If you want to import a pre-made database for testing, follow these steps:
+- Open the terminal in the directory where MySQL is installed, e.g.: C:\Program Files\MySQL\MySQL Server 8.0\bin
+- Type the following command: mysql -u root -p < path_to_file/moviemanager_movies.sql
+- Enter your MySQL password when prompted.
+
 ---
 
 ## ❓ Help
