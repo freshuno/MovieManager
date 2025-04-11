@@ -48,6 +48,24 @@ namespace Movie_Manager.Forms
                 var json = response.Content.ReadAsStringAsync().Result;
                 Movie movie = JsonSerializer.Deserialize<Movie>(json);
                 currentMovie = movie;
+
+                if (DateTime.TryParse(movie.ReleasedRaw, out var parsedDate))
+                {
+                    movie.Released = parsedDate;
+                }
+                else
+                {
+                    movie.Released = null;
+                }
+                if (int.TryParse(movie.totalSeasonsRaw, out int parsedSeasons))
+                {
+                    movie.totalSeasons = parsedSeasons;
+                }
+                else
+                {
+                    movie.totalSeasons = null;
+                }
+                currentMovie = movie;
                 MovieTitle.Text = movie.Title;
                 if (movie.Title == null)
                 {
@@ -121,16 +139,23 @@ namespace Movie_Manager.Forms
                 {
                     conn.Open();
                     string query = @"INSERT INTO Movies 
-    (Title, Year, Rated, Released, Runtime, Genre, Director, Writer, Actors, Plot, Language, Country, Awards, Poster, Metascore, imdbRating, imdbVotes, imdbID, Type, DVD, BoxOffice, Production, Website, Response, Watched)
+    (Title, Year, Rated, Released, Runtime, Genre, Director, Writer, Actors, Plot, Language, Country, Awards, Poster, Metascore, imdbRating, imdbVotes, imdbID, Type, DVD, BoxOffice, Production, totalSeasons, Website, Response, Watched)
     VALUES
-    (@Title, @Year, @Rated, @Released, @Runtime, @Genre, @Director, @Writer, @Actors, @Plot, @Language, @Country, @Awards, @Poster, @Metascore, @imdbRating, @imdbVotes, @imdbID, @Type, @DVD, @BoxOffice, @Production, @Website, @Response, @Watched)";
+    (@Title, @Year, @Rated, @Released, @Runtime, @Genre, @Director, @Writer, @Actors, @Plot, @Language, @Country, @Awards, @Poster, @Metascore, @imdbRating, @imdbVotes, @imdbID, @Type, @DVD, @BoxOffice, @Production, @totalSeasons, @Website, @Response, @Watched)";
 
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@Title", currentMovie.Title);
                         cmd.Parameters.AddWithValue("@Year", currentMovie.Year);
                         cmd.Parameters.AddWithValue("@Rated", currentMovie.Rated);
-                        cmd.Parameters.AddWithValue("@Released", currentMovie.Released);
+                        if (currentMovie.Released.HasValue)
+                        {
+                            cmd.Parameters.AddWithValue("@Released", currentMovie.Released?.Date);
+                        }
+                        else
+                        {
+                            cmd.Parameters.AddWithValue("@Released", DBNull.Value);
+                        }
                         cmd.Parameters.AddWithValue("@Runtime", currentMovie.Runtime);
                         cmd.Parameters.AddWithValue("@Genre", currentMovie.Genre);
                         cmd.Parameters.AddWithValue("@Director", currentMovie.Director);
@@ -151,6 +176,14 @@ namespace Movie_Manager.Forms
                         cmd.Parameters.AddWithValue("@Production", currentMovie.Production);
                         cmd.Parameters.AddWithValue("@Website", currentMovie.Website);
                         cmd.Parameters.AddWithValue("@Response", currentMovie.Response);
+                        if (currentMovie.totalSeasons.HasValue)
+                        {
+                            cmd.Parameters.AddWithValue("@totalSeasons", currentMovie.totalSeasons.Value);
+                        }
+                        else
+                        {
+                            cmd.Parameters.AddWithValue("@totalSeasons", DBNull.Value);
+                        }
                         cmd.Parameters.AddWithValue("@Watched", currentMovie.Watched);
 
                         cmd.ExecuteNonQuery();
@@ -205,7 +238,7 @@ namespace Movie_Manager.Forms
                                 Title = reader["Title"].ToString(),
                                 Year = reader["Year"].ToString(),
                                 Rated = reader["Rated"].ToString(),
-                                Released = reader["Released"].ToString(),
+                                Released = reader["Released"] == DBNull.Value ? null : (DateTime?)reader.GetDateTime("Released"),
                                 Runtime = reader["Runtime"].ToString(),
                                 Genre = reader["Genre"].ToString(),
                                 Director = reader["Director"].ToString(),
@@ -225,6 +258,7 @@ namespace Movie_Manager.Forms
                                 BoxOffice = reader["BoxOffice"].ToString(),
                                 Production = reader["Production"].ToString(),
                                 Website = reader["Website"].ToString(),
+                                totalSeasons = reader["totalSeasons"] == DBNull.Value ? null : (int?)Convert.ToInt32(reader["totalSeasons"]),
                                 Response = reader["Response"].ToString(),
                                 Watched = Convert.ToBoolean(reader["Watched"])
                             };

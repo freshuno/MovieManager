@@ -19,20 +19,22 @@ namespace Movie_Manager.Forms
             if(Movie.Type == "movie")
             {
                 MovieType.Text = "Type: Movie";
+                MovieReleaseYear.Text = "Release date: " + Movie.Released?.ToString("yyyy-MM-dd");
+                MovieRuntime.Text = "Run Time: " + Movie.Runtime;
             }
             else if (Movie.Type == "series")
             {
                 MovieType.Text = "Type: Series";
+                MovieReleaseYear.Text = "Running years: " + Movie.Year;
+                MovieRuntime.Text = "Total Seasons: " + Movie.totalSeasons;
             }
             else
             {
                 MovieType.Text = "Unknown";
             }
             MovieTitle.Text = Movie.Title;
-            MovieReleaseYear.Text = "Release year: " + Movie.Year;
             MovieRated.Text = "Rated: " + Movie.Rated;
             MoviePlot.Text = Movie.Plot;
-            MovieRuntime.Text = "Run Time: " + Movie.Runtime;
             MovieGenre.Text = "Genre: " + Movie.Genre;
             MovieIMDBRating.Text = "IMDB Rating: " + Movie.imdbRating;
             MoviePoster.ImageLocation = Movie.Poster;
