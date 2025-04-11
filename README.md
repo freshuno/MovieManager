@@ -46,7 +46,7 @@ To run the application, install the .NET Desktop Runtime 9.0.4:
 ### 4. Download the Movie Manager App
 
 1. Download the latest version of the app:  
-   👉 [Movie Manager - Download](https://shorturl.at/Z9gdd)
+   👉 [Movie Manager - Download](https://drive.google.com/drive/folders/1oeKmlf5D7a8MvIudKcB2jwj2Rdl_dMkH?usp=sharing)
 2. Unzip the downloaded `.rar` archive (you can use a tool like WinRAR or 7-Zip).
 3. Run the `MovieManager.exe` file.
 
